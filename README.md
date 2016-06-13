@@ -6,8 +6,8 @@ serverless-dynamodb-client
 This Serverless 0.5.x plugin help you to call AWS Dynamodb SDK without switching between different dynamodb instances, whether you work with Dynamodb local or online in AWS.
 
 ## This Plugin Requires
-*  ['serverless-offline'](https://github.com/dherault/serverless-offline)
-*  ['serverless-dynamodb-local'](https://github.com/99xt/serveless-dynamodb-local)
+*  [serverless-offline](https://github.com/dherault/serverless-offline)
+*  [serverless-dynamodb-local](https://github.com/99xt/serverless-dynamodb-local)
 
 
 ## Using in your code
