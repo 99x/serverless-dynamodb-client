@@ -1,0 +1,43 @@
+{
+    "name": "serverless-dynamodb-client",
+    "version": "0.0.1",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "description": "Serverless dynamodb client plugin",
+    "author": "99xtechnology.com",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/99xt/serverless-dynamodb-client"
+    },
+    "keywords": [
+    "serverless framework plugin",
+    "serverless applications",
+    "serverless plugins",
+    "api gateway",
+    "lambda",
+    "dynamodb",
+    "dynamodb client",
+    "dynamodb local",
+    "aws",
+    "aws lambda",
+    "aws dynamodb",
+    "aws dynamodb client",
+    "amazon",
+    "amazon web services",
+    "serverless.com"
+  ],
+    "main": "index.js",
+    "bin": {},
+    "scripts": {
+        "test": "echo \"Warning: no test specified\" && exit 0"
+    },
+    "devDependencies": {
+        "chai": "^3.2.0",
+        "mocha": "^2.2.5"
+    },
+    "dependencies": {
+        "aws-sdk": "^2.3.19"
+    }
+}
