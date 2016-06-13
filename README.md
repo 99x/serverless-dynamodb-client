@@ -21,14 +21,14 @@ Then you can use dynamodb in your code as follows
 ```
 var dynamodb = require('serverless-dynamodb-client');
 
-var docClient = dynamodb.doc;  // return an instance of new AWS.DynamoDB.DocumentClient()
-
 var rawClient = dynamodb.raw;  // returns an instance of new AWS.DynamoDB()
+
+var docClient = dynamodb.doc;  // return an instance of new AWS.DynamoDB.DocumentClient()
 ```
 
 Note: You need to run the serverless-dynamodb-local with default port: 8000 for this library to work
 
 ## References
 
-* DocumentClient => Defining table schema (Dynamodb SDK): http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html
-* Default Client => Defining seeds (Dynamodb Document Client SDK): http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB/DocumentClient.html
+* Dynamodb SDK (rawClient): http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html
+* Dynamodb Document Client SDK (docClient): http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB/DocumentClient.html
