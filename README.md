@@ -2,6 +2,8 @@ serverless-dynamodb-client
 =================================
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
+[![npm version](https://badge.fury.io/js/serverless-dynamodb-client.svg)](https://badge.fury.io/js/serverless-dynamodb-client)
+[![license](https://img.shields.io/npm/l/serverless-dynamodb-client.svg)](https://www.npmjs.com/package/serverless-dynamodb-client)
 
 This Serverless 0.5.x plugin help you to call AWS Dynamodb SDK without switching between different dynamodb instances, whether you work with Dynamodb local or online in AWS.
 
