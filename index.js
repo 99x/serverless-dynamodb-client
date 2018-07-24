@@ -5,8 +5,13 @@ var AWS = require('aws-sdk'),
     };
 
 var isOffline = function () {
-    // Depends on serverless-offline plugion which adds IS_OFFLINE to process.env when running offline
-    return process.env.IS_OFFLINE;
+    return (
+        // IS_LOCAL is true when functions are executed via `sls invoke local`
+        process.env.IS_LOCAL ||
+
+        // Depends on serverless-offline plugion which adds IS_OFFLINE to process.env when running offline
+        process.env.IS_OFFLINE
+    );
 };
 
 var dynamodb = {
