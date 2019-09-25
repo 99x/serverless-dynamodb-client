@@ -1,7 +1,9 @@
+var PORT = process.env.LOCAL_DDB_PORT || '8000';
+
 var AWS = require('aws-sdk'),
     options = {
         region: "localhost",
-        endpoint: "http://localhost:8000"
+        endpoint: "http://localhost:"+PORT
     };
 
 var isOffline = function () {
