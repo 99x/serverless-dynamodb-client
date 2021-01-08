@@ -21,14 +21,19 @@ For each Lambda function, run the following command to add it to the npm package
 Then you can use dynamodb in your code as follows
 
 ```
-var dynamodb = require('serverless-dynamodb-client');
+const { DynamoDB } = require('serverless-dynamodb-client');
 
-var rawClient = dynamodb.raw;  // returns an instance of new AWS.DynamoDB()
-
-var docClient = dynamodb.doc;  // return an instance of new AWS.DynamoDB.DocumentClient()
+// then use it as a standard DynamoDB client
 ```
 
-Note: You need to run the serverless-dynamodb-local with default port: 8000 for this library to work
+## Env variables
+
+You can define some database configuration with environment variables.
+Here they are:
+
+- LOCAL_DDB_HOST: local dynamodb hostname, default is `localhost`
+- LOCAL_DDB_PORT: local dynamodb port, default is `8080`
+- LOCAL_DDB_ENDPOINT: local dynamodb endpoint if you don't want to use HOST and PORT variables, default is `http://${HOST}:${PORT}\`;
 
 ## References
 
